@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <h1>Transitionの動き</h1>
+    <div class="movebox"></div>
+    <input class="button" type="button" value="要素を動かす">
+    <h1>アニメーションクルクル回転</h1>
+    <div class="box gutter"></div>
+    <h1>ローディングのアニメーション</h1>
+    <div class="loading gutter">
+      <div class="letter-holder">
+          <div class="l-1 letter">L</div>
+          <div class="l-2 letter">o</div>
+          <div class="l-3 letter">a</div>
+          <div class="l-4 letter">d</div>
+          <div class="l-5 letter">i</div>
+          <div class="l-6 letter">n</div>
+          <div class="l-7 letter">g</div>
+          <div class="l-8 letter">.</div>
+          <div class="l-9 letter">.</div>
+          <div class="l-10 letter">.</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const moveBox = document.querySelector('.movebox')
+    const button = document.querySelector('.button')
+
+    button.addEventListener('click', () => {
+      moveBox.classList.toggle('active')
+    })
+  </script>
+</body>
+</html>
