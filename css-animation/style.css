@@ -20,8 +20,8 @@
   height: 100px;
   background: #000;
   animation: rotation 2s ease 0s 1 alternate none running;
+  animation-iteration-count: infinite;
 }
-animation-iteration-count: infinite;
 
 .gutter {
   margin-left: 50px;
